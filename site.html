@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grade Calculator</title>
+</head>
+  <body>
+    <div class="sector1">
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+        </div> 
+        <h1>Final Grade Calculator</h1>
+        <label for="TestGrade">Final Test Grade:</label>
+        <input type="number" id="TestGrade" name="TestGrade" min="0" max="100" placeholder="Ex: 90">
+        <br>
+        <label for="TestWeight">Final Test Weight:</label>
+        <input type="number" id="TestWeight" name="TestWeight" min="0" max="100" placeholder="Ex: 85 (percentage value)">
+
+        <table>
+            <h2>Assigments</h2>
+            <tr>
+              <th>Grade</th>
+              <th>Weight</th>
+            </tr>
+            <tr>
+              <td><input type="number" id="g1" name="g1" min="0" max="100" value="" placeholder="Ex: 100" title="Empty or Illegal value will not be considered"></td>
+              <td><input type="number" id="w1" name="w1" min="0" max="100" value="" placeholder="Ex: 5" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g2" name="g2" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w2" name="w2" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g3" name="g3" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w3" name="w3" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g4" name="g4" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w4" name="w5" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g5" name="g5" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w5" name="w5" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g6" name="g6" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w6" name="w6" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g7" name="g7" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w7" name="w7" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g8" name="g8" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w8" name="w8" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g9" name="g9" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w9" name="w9" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="g10" name="g10" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+                <td><input type="number" id="w10" name="w10" min="0" max="100" value="" title="Empty or Illegal value will not be considered"></td>
+            </tr>
+          </table>
+
+          <button onclick="run()">Calculate</button>
+
+          <h2 id="grade"></h2>
+          <p id="result"></p>
+
+          <div class="info">
+            <a href="https://www.linkedin.com/in/avivgewirtz">
+                <img src="LI-In-Bug.png" alt="LinkedIn Profile">
+            </a>
+            <div>
+                <p class="me">2024</p>
+                <p class="me">Aviv Gewirtz</p>
+            </div>
+          </div>
+    </div>
+    
+    <script src="main.js"></script>
+
+  </body>
+</html>
